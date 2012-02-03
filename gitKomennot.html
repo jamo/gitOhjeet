@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Git Kmennot Kloonattaessa</title>
+</head>
+
+<body>
+<body>
+
+<h1>Materiaalin siirto gittiin ja git komennot</h1>
+<p>Ihan aluksi kannattaa muutama asetus laittaa kohdalleen gitin asetuksista. Näin commiteissa näkyvät tiedot ovat järkeviä.</p>
+<h3> <code>git config --global user.name "Nimesi" </code></h3>
+<h3><code>git config --global user.email foo.bar@osoite.fi</code></h3>
+<p>&nbsp;</p>
+<h2><code>git status </code> </h2>
+näyttää tulosteen, joka kuvaa git reposi tilaa.
+<p><code>$ git status  
+</code><br>
+<code># On branch master<br>
+</code><code># Changes to be committed:  
+  <br>
+  #   (use "git reset HEAD &lt;file&gt;..." to unstage)  
+  <br>
+  #  
+  <br>
+  #	new file:   README <br>
+  #  
+  <br>
+  # Changed but not updated:  
+  <br>
+  #   (use "git add &lt;file&gt;..." to update what will be committed)  
+  <br>
+  # <br>
+  #	modified:   Main.java  
+  <br>
+#</code></p>
+<p>Tämä tulostus kertoo, että Main.javaa on muokattu ja ja että README tiedosto on uusi.</p>
+<h2><code>git add -A</code></h2>
+<p>Lisätäksesi tiedostot git:in hallittavaksi komenna <code>git add &lt;file&gt; &lt;file2&gt;</code> jos haluat lisätä vain tietyt tiedostot. Voit lisätä kaikki komentamalla <code>git add -A</code></p>
+<h2><code>git commit -m &quot;viesti&quot;</code></h2>
+<p>Seuraavaksi muutokset tulee committaa. <code>git commit -m &quot;viesti, mitä on tehty&quot;</code></p>
+<h2><code>git push</code></h2>
+<p>Nyt muutokset ovat paikallisesti gitissä, mutta vielä kukaan muu palvelimelta tai githubissa ei näe muutoksiasi. Ne täytyy vielä pushata 'pilveen'. Se tapahtuu komennolla <code>git push </code>Kuitenkin ensimmäisellä kerralla joudut komentamaan <code>git push origin master</code></p>
+<p>Nyt kaikki muutoksesi on 'pilvessä'</p>
+<h2><code>git pull</code></h2>
+<p>Mikäli työskentelet useammalta koneelta samaan repoon tai joku muu on tehnyt muutoksia repon joudut lataamaan muutokset ennen kuin voi pushata mitään. Tämä tapahtuu komennolla<code>  git pull</code></p>
+<h2><code>git</code></h2>
+<p>Komentona <code>git</code> tulostaa selostuksen yleisimmin tarvittavista komennoista. ja <code>git help komento</code>näyttää komennon käyttöohjeen. </p>
+<font size="-2">
+<hr>
+Jarmo Isotalo 2012.
+Materiaalia saa vapaasti ei kaupallisesti
+Muu käyttö vaatii luvan.
+
+</font>
+</body>
+</html>

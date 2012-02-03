@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GitHub käyttöönotto</title>
+</head>
+
+<body>
+<body>
+<h1>Github:
+</h1>
+<h2>Käyttöönotto:</h2>
+<h3>Rekisteröityminen Githubiin</h3>
+<p>Rekisteröidy githubiin osoitteessa   <a href="https://github.com/">https://github.com/</a> ja valitse<code> &quot;Get free account</code>&quot; Jos olet opiskelija on suositeltavaa rekisteröityä käyttämällä oppilaitoksen sähköpostiosoitetta, jollon voit helpommin halea ilmaista<code> micro plan:ia</code> jolloin saat viisi ilmaista yksityis repoa. </p>
+<p>Jos olet opiskelija käy vielä osoitteessa <a href="https://github.com/edu">https://github.com/edu </a>ja kerro heille olevasi opiskelija ja miksi tarvitsisit githubista maksullisen version ilmaiseksi. Hyviksi syiksi voi mainita vaikka tarpeen ohjelmointiprojektien keskitetyyn hallintaan ja koulun (ohjelmoini)ryhmätöiden ryhmätyöskentlyyn. Muista, perustelut pitää tietysti tehdä englanniksi.</p>
+<h3>Repositorion luominen Githubiin</h3>
+<p>Valitse <code>new repository</code>, täytä tarvittavat tiedot ja vaitse <code>create repository</code>.</p>
+<p>Jotta voit tuottaa materiaalia repositorioosi, tulee sinun lisätä ssh-avain githubiin. Voit luoda uuden ssh avaimen helposti komenolla: <br>
+<code>ssh-keyden -t rsa -C &quot;Sinun.sähköpostiosoite@jotain.com&quot; </code>;<br>
+Kun tallennettavan kohteen nimeä kysytään, voit valita siihen minkä haluat tai käyttää oletuksena ehdoitettua. Ubuntussa kuitenkin on suositeltavaa käyttää polkuna <code>~/.ssh </code> Näin git löytää todennäköisemmin avaimesi.</p>
+<p>Komento luo kaksi tiedostoa; oletuksena nimiltään <code>id_rsa</code> ja <code>id_rsa.pub</code>. Haluat avata <code>id_rsa.pub</code> tiedoston tekstieditorissa ja kopioida tiedoston sisällön githubiin.</p>
+<p>Githubissa mene <code>Asetukset -&gt; SSH Public Keys </code> <a href="https://github.com/account/ssh">https://github.com/account/ssh</a> ja valitse <code>Add another public key</code> Syötä sille otsikko ja kopioi avain <code>Key</code> kenttään. </p>
+<p>Nyt olet valmis kloonaamaan repositoriosi ja push:aamaan sinne materiaalia.</p>
+<h3>Repositorion kloonaaminen</h3>
+<p>Kun olet githubissa katsomassa reposi sisältöä ja se on tyhjä näet siinä ohjeet miten committaa sinne materiaalia, mutta niistä kiinnostavia on seuraava tekstinpala <code>git@github.com:&lt;username&gt;/&lt;projektinNimi&gt;.git</code><br> 
+Nyt tiedät kaiken tarvittavan kloonataksesi repositorion. Kloonaaminen tapahtuu menemällä siihen kansioon, johon haluat git repon omaavan kansion syntyvän.<br>
+<code>git clone 
+git@github.com:&lt;username&gt;/&lt;projektinNimi&gt;.git </code><br>
+tämä luo kansion <code> projektinNimi</code> kansioon jossa parhaillaan olet. Mikäli teet tämän ennen kuin olet lisänny tavaraa repoosi saat virheilmoituksen, että olet kloonannut tyhjän repositorion. Siitä ei tarvitse häiriintyä. </p>
+<p>Nyt siirry repositorioosi <code>cd projektinNimi</code> ja olet git:in omaavassa kansiossa. Siirrä haluamasi tiedostot tään kansioon, niin saat ne git:in toimintaalueelle. Voit esimerkiksi kopioida tähän kansioon NetBeansProjects kansion sisällön. Tai tietyn projektin kansiot. Huomaa, että joudut avaamaan tähän kansioon kopioimasi materiaalit NetBeanssisa uudestaan tästä kansiosta, jotta muokkaat versionhallinnan alaisia tiedostoja.<br>
+  <br>
+<a href="gitKomennot.html">materiaalin lisääminen gittiin</a>.</p>
+<p> <font size="-2">
+</font></p>
+<font size="-2">
+<hr>
+Jarmo Isotalo 2012.
+Materiaalia saa vapaasti ei kaupallisesti
+Muu käyttö vaatii luvan.
+
+</font>
+</body>
+</html>
